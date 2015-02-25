@@ -1,22 +1,378 @@
-
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body #container {
+  background: #d01f45 url('img/top.jpg') top center no-repeat;
+  background-size: 100%  auto;
+  padding: 0px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 25px 0px 0px 0px;
+  position: relative;
+}
+body #container .atrament-light {
+  font-family: "atrament-web", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+body #container .clear {
+  clear: both;
+}
+body #container .wrapper {
+  width: 95%;
+  margin: 0 auto;
+}
+body #container header {
+  background: #d01f45;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  background: #d01f45 url('img/header.jpg') 10% center no-repeat;
+  text-indent: -9988px;
+}
+@media (min-width: 414px) {
+  body #container header {
+    background-size: 640px auto;
+    height: 164px;
+  }
+}
+@media (max-width: 413px) {
+  body #container header {
+    background-size: 500px auto;
+    height: 128px;
+  }
+}
+body #container nav {
+  padding: 6px 0px;
+  background: #bee0dc;
+}
+body #container nav .wrapper {
+  padding: 20px 0px;
+}
+body #container nav a {
+  float: left;
+  color: #4f3743;
+  font-family: "atrament-web", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  text-transform: uppercase;
+  background: url('img/arrow.png') no-repeat scroll center left;
+  background-size: 12px 19px;
+  padding: 0px 0px 0px 34px;
+  text-decoration: none;
+}
+@media (min-width: 414px) {
+  body #container nav a {
+    font-size: 28px;
+  }
+}
+@media (max-width: 413px) {
+  body #container nav a {
+    font-size: 24px;
+  }
+}
+body #container nav p {
+  float: right;
+  color: #4f3743;
+  font-family: "atrament-web", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  text-transform: uppercase;
+  background-size: 12px 19px;
+}
+@media (min-width: 414px) {
+  body #container nav p {
+    font-size: 28px;
+  }
+}
+@media (max-width: 413px) {
+  body #container nav p {
+    font-size: 24px;
+  }
+}
+body #container #content {
+  height: 100%;
+  position: relative;
+  background: url('img/bg-content.jpg') bottom center;
+  background-size: 100%  auto;
+  padding: 0px 0px 140px 0px;
+}
+body #container #content .bord {
+  min-height: 79px;
+  border-top: 1px solid #c9c7c8;
+  padding: 20px 0px 20px 0px;
+  text-align: center;
+}
+body #container #content .bord img {
+  width: 95%;
+  height: auto;
+  text-align: center;
+  position: relative;
+}
+body #container #content ul {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+body #container #content ul li {
+  width: 100%;
+  padding: 37px 0px;
+  cursor: pointer;
+}
+body #container #content ul li.active .intro {
+  color: #d01f45;
+}
+body #container #content ul li .copy {
+  width: 100%;
+  position: relative;
+  padding: 0px 0px 25px 0px;
+  background-size: 100% auto;
+}
+body #container #content ul li .wrapper {
+  background-image: url('img/icon-message.png');
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 32px 32px;
+}
+body #container #content ul li.even {
+  background-color: #ffffff;
+}
+body #container #content ul li.even .head {
+  border: 5px solid #ffffff;
+}
+body #container #content ul li.even .question .balloon {
+  background: #ece6e6;
+}
+body #container #content ul li.even .question .balloon:before {
+  background: #ffffff url('img/balloon-g.png') no-repeat scroll 0px 42px;
+}
+body #container #content ul li.even .answer .balloon:before {
+  background: #ffffff url('img/answer.png') no-repeat scroll 0px 42px;
+}
+body #container #content ul li.odd {
+  background-color: #ece6e6;
+}
+body #container #content ul li.odd .head {
+  border: 5px solid #ece6e6;
+}
+body #container #content ul li.odd .question .balloon {
+  background: #ffffff;
+}
+body #container #content ul li.odd .question .balloon:before {
+  background: #ece6e6 url('img/balloon-w.png') no-repeat scroll 0px 42px;
+}
+body #container #content ul li.odd .answer .balloon:before {
+  background: #ece6e6 url('img/answer.png') no-repeat scroll 0px 42px;
+}
+body #container #content ul li .head {
+  background-size: 95px 95px;
+  width: 95px;
+  height: 95px;
+  display: block;
+  float: left;
+  -webkit-border-radius: 95px;
+  -moz-border-radius: 95px;
+  border-radius: 95px;
+  margin: 0px 13px 0px 0px;
+}
+body #container #content ul li p.intro {
+  font-family: "atrament-web", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #383836;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  padding: 31px 30px 0px 0px;
+  float: left;
+  line-height: 34px;
+  font-size: 33px;
+}
+body #container #content ul li.alert p.intro {
+  color: #d01f45 !important;
+}
+body #container #content ul li .balloon {
+  position: relative;
+  margin: 0px 0px 40px 0px;
+  word-wrap: break-word;
+  float: left;
+  font-family: "ff-meta-serif-web-pro";
+}
+@media (min-width: 414px) {
+  body #container #content ul li .balloon {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+@media (max-width: 413px) {
+  body #container #content ul li .balloon {
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
+body #container #content ul li .question .balloon {
+  color: #4f3743;
+  padding: 35px 40px;
+}
+body #container #content ul li .question .balloon:before {
+  content: "";
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  width: 9px;
+  top: 0px;
+}
+body #container #content ul li .answer {
+  width: 100%;
+  position: relative;
+}
+body #container #content ul li .answer .balloon {
+  background: #d01f45;
+  padding: 35px 60px 35px 30px;
+  color: #ffffff;
+}
+body #container #content ul li .answer .balloon:before {
+  content: "";
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 9px;
+}
+body #container #content ul li.new .head {
+  border: 5px solid #d01f45;
+}
+body #container #content ul li .head {
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+body #container #content ul li .head.peter {
+  background: url('img/img-peter.png') left center no-repeat !important;
+  float: right;
+  margin: 0px;
+}
